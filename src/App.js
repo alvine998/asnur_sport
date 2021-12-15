@@ -8,26 +8,14 @@ import 'admin-lte/dist/css/adminlte.min.css';
 
 import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
+import Data_Barang from './pages/Data_Barang';
+import Input_Barang from './pages/Input_Barang';
 
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <Dashboard/>
+      <Input_Barang/>
     </div>
   );
 }
