@@ -10,12 +10,23 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/Login';
 import Data_Barang from './pages/Data_Barang';
 import Input_Barang from './pages/Input_Barang';
+import About from './pages/About';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <Input_Barang/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/dashboard" element={<Dashboard/>} />
+          <Route path="/data-barang" element={<Data_Barang/>} />
+          <Route path="/input-barang" element={<Input_Barang/>} />
+          <Route path="/tentang" element={<About/>} />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -5,8 +5,20 @@ import './dashboard.css';
 class Dashboard extends Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            
+        };
     }
+
+    getFlag(){
+        let flag = localStorage.getItem('flagKey')
+        console.log("Flag : ", flag)
+    }
+
+    componentDidMount(){
+        this.getFlag();
+    }
+    
     render() {
         return (
             <div>

@@ -6,6 +6,8 @@ class Navbar extends Component {
         super(props);
         this.state = {};
     }
+
+    
     render() {
         return (
             <div>
@@ -54,7 +56,7 @@ class Navbar extends Component {
                                 </li>
                             </ul>
                             <div class="d-flex">
-                                <a className='nav-link' style={{color:'black'}} href='#'>Logout</a>
+                                <a className='nav-link' style={{color:'black'}} href='/'>Logout</a>
                             </div>
                         </div>
                     </div>
