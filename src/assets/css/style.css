@@ -38,3 +38,29 @@
     padding-right: 25%;
     padding-top: 20px;
 }
+
+
+/* Page Transaksi */
+.box-harga{
+    width: 50%;
+    height: 100px;
+    background-color: #dfdfdf;
+    float: right;
+}
+
+.width-kode{
+    width: 50%;
+}
+
+.width-cari{
+    width: 50%;
+}
+
+.positioning{
+    margin-top: 10px;
+    float: left;
+}
+
+.pad-table{
+    margin-top: 100px;
+}

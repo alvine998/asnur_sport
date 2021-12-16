@@ -24,7 +24,7 @@ class Navbar extends Component {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a className={`nav-link ` + (this.props.transaksi ? 'active' : '')} href="#">Transaksi Baru</a>
+                                    <a className={`nav-link ` + (this.props.transaksi ? 'active' : '')} href="/transaksi">Transaksi Baru</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
