@@ -82,7 +82,7 @@ class Input_Barang extends Component {
                                     </div>
                                     <div className='col'>
                                         <a className='btn btn-primary btn-save-size'>Simpan Data</a>
-                                        <a className='btn btn-danger btn-save-size' style={{marginTop:10}}>Batal</a>
+                                        <a className='btn btn-danger btn-save-size' style={{marginTop:10}} href='/data-barang'>Batal</a>
                                     </div>
                                 </div>
                             </form>

@@ -12,6 +12,7 @@ import Data_Barang from './pages/Data_Barang';
 import Input_Barang from './pages/Input_Barang';
 import About from './pages/About';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Data_Akun from './pages/Data_Akun';
 
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
           <Route path="/dashboard" element={<Dashboard/>} />
           <Route path="/data-barang" element={<Data_Barang/>} />
           <Route path="/input-barang" element={<Input_Barang/>} />
+          <Route path="/data-akun" element={<Data_Akun/>} />
           <Route path="/tentang" element={<About/>} />
-
         </Routes>
       </BrowserRouter>
     </div>

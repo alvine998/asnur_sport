@@ -34,7 +34,7 @@ class Dashboard extends Component {
                     </div>
 
                     {/* Table Transaksi */}
-                    <div style={{paddingTop:50}}>
+                    <div style={{paddingTop:50, paddingBottom:50}}>
                         Transaksi Terakhir
                         <table className='table table-striped'>
                             <thead>

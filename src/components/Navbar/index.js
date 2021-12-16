@@ -20,7 +20,7 @@ class Navbar extends Component {
                         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a className={`nav-link ` + (this.props.beranda ? 'active' : '')} aria-current="page" href="#">Beranda</a>
+                                    <a className={`nav-link ` + (this.props.beranda ? 'active' : '')} aria-current="page" href="/dashboard">Beranda</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -32,8 +32,8 @@ class Navbar extends Component {
                                         Data Master
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Data Barang</a></li>
-                                        <li><a class="dropdown-item" href="#">Data Akun</a></li>
+                                        <li><a class="dropdown-item" href="/data-barang">Data Barang</a></li>
+                                        <li><a class="dropdown-item" href="/data-akun">Data Akun</a></li>
                                         {/* <li><hr class="dropdown-divider"/></li>
                                         <li><a class="dropdown-item" href="#">Something else here</a></li> */}
                                     </ul>
@@ -52,7 +52,7 @@ class Navbar extends Component {
                                 </li>
 
                                 <li class="nav-item">
-                                    <a className={`nav-link ` + (this.props.tentang ? 'active' : '')} href="#">Tentang</a>
+                                    <a className={`nav-link ` + (this.props.tentang ? 'active' : '')} href="/tentang">Tentang</a>
                                 </li>
                             </ul>
                             <div class="d-flex">

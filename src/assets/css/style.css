@@ -20,3 +20,21 @@
 .btn-save-size{
     width: 100%;
 }
+
+/* Page Data-Akun */
+.box-akun{
+    border-style: groove;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+}
+
+.full-size{
+    width: 100%;
+}
+
+.position-fix{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 20px;
+}

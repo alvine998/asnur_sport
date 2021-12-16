@@ -20,7 +20,7 @@ class Data_Barang extends Component {
                             {/* Table Transaksi */}
                             <div style={{ paddingTop: 50 }}>
                                 <div style={{ paddingBottom: 20, float: 'left' }}>
-                                    <a className='btn btn-primary'>Buat Data Barang</a>
+                                    <a className='btn btn-primary' href='/input-barang'>Buat Data Barang</a>
                                 </div>
 
                                 <table className='table table-striped'>
