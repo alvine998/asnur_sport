@@ -1,6 +1,19 @@
 import React, { Component } from 'react';
 import Navbar from '../../components/Navbar';
 import './dashboard.css';
+import {Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import {Line} from 'react-chartjs-2';
+import faker from 'faker';
+
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend
+);
 
 class Dashboard extends Component {
     constructor(props) {
@@ -9,6 +22,7 @@ class Dashboard extends Component {
             
         };
     }
+
 
     getFlag(){
         let flag = localStorage.getItem('flagKey')
@@ -20,6 +34,53 @@ class Dashboard extends Component {
     }
     
     render() {
+
+        const options = {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Live Chart',
+                },
+            },
+        };
+
+        const labels = [
+            'Januari',
+            'Februari',
+            'Maret',
+            'April',
+            'Mei',
+            'Juni',
+            'Juli',
+            'Agustus',
+            'September',
+            'Oktober',
+            'November',
+            'Desember',
+        ]
+
+        const data = {
+            labels,
+            datasets:[
+                {
+                    label: 'Dataset 1',
+                    data: labels.map(() => faker.datatype.number({min: 0, max: 1000})),
+                    borderColor: 'rgb(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                },
+                {
+                    label: 'Dataset 2',
+                    data: labels.map(() => faker.datatype.number({min: 0, max: 1000})),
+                    borderColor: 'rgb(53, 162, 235)',
+                    backgroundColor: 'rgba(53, 162, 235, 0.5)',
+                },
+            ],
+        };
+
         return (
             <div>
                 <div>
@@ -27,10 +88,11 @@ class Dashboard extends Component {
                 </div>
 
                 <div className='container'>
+                    <h2 style={{marginTop:20}}><u>Welcome Home Admin</u></h2>
 
                     {/* Grafik */}
-                    <div className='box-grafik'>
-                        Grafik Info
+                    <div>
+                        <Line options={options} data={data}/>
                     </div>
 
                     {/* Table Transaksi */}
